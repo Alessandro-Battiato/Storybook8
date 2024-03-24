@@ -15,6 +15,7 @@ export const LoggedOut = {};
 
 // More on interaction testing: https://storybook.js.org/docs/writing-tests/interaction-testing
 export const LoggedIn = {
+  // TO DO: Explain in detail the play function: https://www.youtube.com/watch?v=dcuzwCHI940
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     const loginButton = canvas.getByRole('button', { name: /Log in/i });
